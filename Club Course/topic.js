@@ -1,4 +1,4 @@
-let topic = ["尚未開學", "停課", "環境準備", "隨機性", "重複性", "條件判斷"];
+let topic = ["尚未開學", "國定假日", "環境準備", "隨機性", "重複性", "條件判斷"];
 
 let startDate = new Date();
 console.log(startDate);
@@ -22,7 +22,7 @@ function addTopic(index){
 				<td>${topic[index]}</td>
 			</tr>`
 	);
-	if (topic[index] == "停課")
+	if (topic[index] == "停課" || topic[index] == "國定假日")
 		$("tr").eq(index + 1).css("background-color", "gray");
 	else if (index % 2 == 1)
 		$("tr").eq(index + 1).css("background-color", "#e0be8c");

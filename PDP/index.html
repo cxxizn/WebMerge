@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Professional Dynametric Programs</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>人格特質分析系統</h1>
+		<div id="question">
+			<p style="color: #FF0000;">
+				請回答以下的問題(共30題)：如果答案是非常同意，請給自己打5分；
+				如果是比較同意，則打4分； 如果是差不多，打3分；
+				如果只是有一點同意，請打2分； 如果答案是不同意，就打1分。
+			</p>
+			<h2 id="title"></h2>
+			<div class="radio-group">
+				<input type="radio" id="r5" name="radio" /><label for="r5">5分</label>
+				<input type="radio" id="r4" name="radio" /><label for="r4">4分</label>
+				<input type="radio" id="r3" name="radio" /><label for="r3">3分</label>
+				<input type="radio" id="r2" name="radio" /><label for="r2">2分</label>
+				<input type="radio" id="r1" name="radio" /><label for="r1">1分</label>
+			</div>
+			
+			<div id="cmd">
+				<button class="btn" style="--color:#f3738a;--border:2px;--slant:.5em" id="btnReset">重新測驗</button>
+				<button class="btn" style="--color:#f3738a;--border:2px;--slant:.5em" id="btnNext">下一題</button>
+			</div>
+		</div>
+
+        <div id="result">
+            <h1>測驗結果</h1>
+            <h3>假若你有某一項分遠遠高於其他四項，你就是典型的這種屬性，假若你有某兩項分大大超過其他三項，你是這兩種動物的綜合；假若你各項分數都比較接近，恭喜你，你是一個面面俱到近似完美性格的人；假若你有某一項分數特別偏低的話，想提高自己就需要在那一種動物屬性的加強上下工夫了。我們就來逐一分析一下各種迥然不同的“動物”吧！</h3>
+        </div>
+        
+        <div id="score"></div>
+
+		<script src="//unpkg.com/jquery"></script>
+		<script src="main.js"></script>
+		<script src="data.js"></script>
+	</body>
+</html>
