@@ -13,6 +13,7 @@
 				如果是比較同意，則打4分； 如果是差不多，打3分；
 				如果只是有一點同意，請打2分； 如果答案是不同意，就打1分。
 			</p>
+			<p>人格特質介紹：<a href="tiger.html" target="_blank">老虎</a>、<a href="peacock.html" target="_blank">孔雀</a>、<a href="koala.html" target="_blank">無尾熊</a>、<a href="owl.html" target="_blank">貓頭鷹</a>與<a href="chameleon.html" target="_blank">變色龍</a>。</p>
 			<h2 id="title"></h2>
 			<div class="radio-group">
 				<input type="radio" id="r5" name="radio" /><label for="r5">5分</label>
@@ -21,7 +22,7 @@
 				<input type="radio" id="r2" name="radio" /><label for="r2">2分</label>
 				<input type="radio" id="r1" name="radio" /><label for="r1">1分</label>
 			</div>
-			
+
 			<div id="cmd">
 				<button class="btn" style="--color:#f3738a;--border:2px;--slant:.5em" id="btnReset">重新測驗</button>
 				<button class="btn" style="--color:#f3738a;--border:2px;--slant:.5em" id="btnNext">下一題</button>
@@ -31,9 +32,54 @@
         <div id="result">
             <h1>測驗結果</h1>
             <h3>假若你有某一項分遠遠高於其他四項，你就是典型的這種屬性，假若你有某兩項分大大超過其他三項，你是這兩種動物的綜合；假若你各項分數都比較接近，恭喜你，你是一個面面俱到近似完美性格的人；假若你有某一項分數特別偏低的話，想提高自己就需要在那一種動物屬性的加強上下工夫了。我們就來逐一分析一下各種迥然不同的“動物”吧！</h3>
-        </div>
+			<table>
+				<tr>
+					<td width="110"><div text-align="center">動物</div></td>
+					<td width="250"><div text-align="center">特質</div></td>
+					<td width="140"><div text-align="center">得分</div></td>
+				</tr>
+				<tr>
+					<td><div text-align="center"><a href="tiger.html" target="_blank"><img src="images/tiger.jpg" alt="老虎" width="98" height="141" /></a></div></td>
+					<td><p>老虎型 (支配型Dominance)</p>
+					<p>有自信，夠權威，決斷力高，競爭性強，胸懷大志，喜歡評估。<br />
+					(<a href="tiger.html" target="_blank">詳細說明…</a>)</p></td>
+					<td><div class="score" id="tiger" text-align="center"></div></td>
+				  </tr>
+				  <tr>
+					<td><div text-align="center"><a href="peacock.html" target="_blank"><img src="images/peacock.jpg" alt="孔雀" width="98" height="141" /></a></div></td>
+					<td><p>孔雀型 (表達型Extroversion)</p>
+					  <p>很熱心，夠樂觀，口才流暢，好交朋友，風度翩翩，誠懇熱心。<br />
+					(<a href="peacock.html" target="_blank">詳細說明…</a>)</p></td>
+					<td><div class="score" id="peacock" text-align="center"></div></td>
+				  </tr>
+				  <tr>
+					<td><div text-align="center"><a href="koala.html"><img src="images/koala.jpg" alt="無尾熊" width="98" height="141" /></a></div></td>
+					<td><p>無尾熊型 (耐心型Patience)</p>
+					  <p>很穩定，夠敦厚，溫和規律，不好衝突。<br />
+					(<a href="koala.html" target="_blank">詳細說明…</a>)</p></td>
+					<td><div class="score" id="koala" text-align="center"></div></td>
+				  </tr>
+				  <tr>
+					<td><div text-align="center"><a href="owl.html"><img src="images/owl.jpg" alt="貓頭鷹" width="98" height="141" /></a></div></td>
+					<td background="owl.html"><p>貓頭鷹型 (精確型Conformity)</p>
+					<p>很傳統，注重細節，條理分明，責任感強，重視紀律。<br />
+					(<a href="owl.html" target="_blank">詳細說明…</a>)</p></td>
+					<td><div class="score" id="owl" text-align="center"></div></td>
+				  </tr>
+				  <tr>
+					<td><div text-align="center"><a href="chameleon.html" target="_blank"><img src="images/chameleon.jpg" alt="變色龍" width="98" height="141" /></a></div></td>
+					<td><p>變色龍型 (整合型1/2 Sigma)</p>
+					<p>善於在工作中調整自己的角色去適應環境，具有很好的溝通能力。<br />
+					(<a href="chameleon.html" target="_blank">詳細說明…</a>)</p></td>
+					<td><div class="score" id="chameleon" text-align="center"></div></td>
+				  </tr>
+			</table>
+			<div id="cmd">
+				<button class="btn" style="--color:#f3738a;--border:2px;--slant:.5em" id="btnReset">重新測驗</button>
+			</div>
+		</div>
         
-        <div id="score"></div>
+       
 
 		<script src="//unpkg.com/jquery"></script>
 		<script src="main.js"></script>
