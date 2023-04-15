@@ -166,6 +166,19 @@ $(function(){
 
     function showScore()
     {
-        
+        $("#tiger span").remove();
+		$("#tiger").append("<span>" + nTiger + "</span>");
+		
+		$("#peacock span").remove();
+		$("#peacock").append("<span>" + nPeacock + "</span>");
+		
+		$("#koala span").remove();
+		$("#koala").append("<span>" + nKoala + "</span>");
+		
+		$("#owl span").remove();
+		$("#owl").append("<span>" + nOwl + "</span>");
+		
+		$("#chameleon span").remove();
+		$("#chameleon").append("<span>" + nChameleon + "</span>");
     }
 })
