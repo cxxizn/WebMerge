@@ -15,6 +15,9 @@ $(function(){
     $("#btnReset").on("click", function(){
         reset();
     });
+	$("#btnReset2").on("click", function(){
+        reset();
+    });
 
     $("#btnNext").on("click", function(){
         let nRet = getScore();

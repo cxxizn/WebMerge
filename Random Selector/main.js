@@ -8,13 +8,22 @@ let imageUrlArray = [
     "https://cdn2.ettoday.net/images/6295/6295532.jpg"
 ]
 $(function(){
+    let old;
     $("input").on("click",function(){
         // alert("Hiiiii");
         var numberOfListItem = $("li").length;
         // 3
         // 0 ~ 1 => 0 ~ 3
         var randomChildNumber = Math.floor(Math.random() * numberOfListItem);
-        console.log(randomChildNumber); // Console可以看到結果
+        console.log("randomChildNumber: " + randomChildNumber); // Console可以看到結果
+
+        while(old == randomChildNumber){    //避免重復
+            randomChildNumber = Math.floor(Math.random() * numberOfListItem);
+            console.log("randomChildNumber: " + randomChildNumber); 
+        }
+        old = randomChildNumber;
+        console.log("old: " + old);
+
         $("h1").text($("li").eq(randomChildNumber).text());
         $("img").attr("src",imageUrlArray[randomChildNumber]);
     });
